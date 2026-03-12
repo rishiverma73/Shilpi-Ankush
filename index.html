@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shilpi & Ankush - Wedding Invitation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Audio Player -->
+    <audio id="bg-music" loop>
+        <!-- A placeholder for soft background music -->
+        <source src="https://assets.mixkit.co/music/preview/mixkit-beautiful-dream-493.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Floating Music Controls -->
+    <div class="music-control" id="music-btn">
+        <i class="fas fa-music"></i>
+    </div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-content">
+            <h1 class="loader-names">S & A</h1>
+            <p>Loading love...</p>
+        </div>
+    </div>
+
+    <!-- 1. Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h3 class="subtitle">Together with their families</h3>
+            <h1 class="names">Shilpi <span>&</span> Ankush</h1>
+            <p class="invite-text">invite you to celebrate their wedding</p>
+            <div class="wedding-date">
+                <span class="date-line"></span>
+                <span>April 25, 2026</span>
+                <span class="date-line"></span>
+            </div>
+            <a href="#rsvp" class="btn-primary">RSVP Now</a>
+        </div>
+    </section>
+
+    <!-- 2. Couple Section -->
+    <section class="couple-section section-padding" id="couple">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>The Happy Couple</h2>
+                <img src="assets/floral-divider.png" alt="divider" class="divider fade-in" onerror="this.style.display='none'">
+            </div>
+            <div class="couple-wrapper">
+                <div class="couple-card reveal from-left">
+                    <div class="couple-img-wrapper">
+                        <img src="assets/bride.jpg" alt="Bride" class="couple-img" id="bride-img">
+                    </div>
+                    <div class="couple-info">
+                        <h3>Shilpi Kumari</h3>
+                        <p class="role">The Bride</p>
+                        <p class="description">A joyful soul with a heart full of love. She loves art, travel, and spending time with family.</p>
+                        <div class="social-links">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wedding-ring reveal scale-up">
+                    <i class="fas fa-ring heart-beat"></i>
+                </div>
+
+                <div class="couple-card reveal from-right">
+                    <div class="couple-img-wrapper">
+                        <img src="assets/groom.jpg" alt="Groom" class="couple-img" id="groom-img">
+                    </div>
+                    <div class="couple-info">
+                        <h3>Ankush Aman</h3>
+                        <p class="role">The Groom</p>
+                        <p class="description">An adventurous spirit who finds joy in the little things. He enjoys technology, reading, and coffee.</p>
+                        <div class="social-links">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Countdown Timer -->
+    <section class="countdown-section section-padding" id="countdown-sec">
+        <div class="countdown-overlay"></div>
+        <div class="container reveal">
+            <h2>Don't Miss It!</h2>
+            <div class="countdown-timer" id="timer">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <p>Days</p>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <p>Minutes</p>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <p>Seconds</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Wedding Events -->
+    <section class="events-section section-padding" id="events">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Wedding Events</h2>
+                <img src="assets/floral-divider.png" alt="divider" class="divider fade-in" onerror="this.style.display='none'">
+                <p>Join us in the celebrations leading up to our big day.</p>
+            </div>
+            
+            <div class="events-grid">
+                <!-- Haldi -->
+                <div class="event-card reveal scale-up">
+                    <div class="event-img">
+                        <img src="assets/haldi.jpg" alt="Haldi" id="haldi-img">
+                    </div>
+                    <div class="event-details">
+                        <h3>Haldi Ceremony</h3>
+                        <div class="event-info">
+                            <p><i class="far fa-calendar-alt"></i> April 23, 2026</p>
+                            <p><i class="far fa-clock"></i> 10:00 AM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Bride's Residence, Qazi Chak,Paharpur (Gayaji)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mehndi -->
+                <div class="event-card reveal scale-up" style="transition-delay: 0.1s;">
+                    <div class="event-img">
+                        <img src="assets/mehndi.jpg" alt="Mehndi" id="mehndi-img">
+                    </div>
+                    <div class="event-details">
+                        <h3>Mehndi & Sangeet</h3>
+                        <div class="event-info">
+                            <p><i class="far fa-calendar-alt"></i> April 24, 2026</p>
+                            <p><i class="far fa-clock"></i> 11:00 AM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Bride's Residence, Qazi Chak,Paharpur (Gayaji)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wedding -->
+                <div class="event-card reveal scale-up" style="transition-delay: 0.2s;">
+                    <div class="event-img">
+                        <img src="assets/wedding.jpg" alt="Wedding" id="wedding-img">
+                    </div>
+                    <div class="event-details">
+                        <h3>Wedding Ceremony</h3>
+                        <div class="event-info">
+                            <p><i class="far fa-calendar-alt"></i> April 25, 2026</p>
+                            <p><i class="far fa-clock"></i> 7:00 PM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Milan Utsav Hotel & Banquet Hall, Nutan Nagar (Gayaji) </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reception -->
+                <div class="event-card reveal scale-up" style="transition-delay: 0.3s;">
+                    <div class="event-img">
+                        <img src="assets/reception.jpg" alt="Reception" id="reception-img">
+                    </div>
+                    <div class="event-details">
+                        <h3>Grand Reception</h3>
+                        <div class="event-info">
+                            <p><i class="far fa-calendar-alt"></i> April 27, 2026</p>
+                            <p><i class="far fa-clock"></i> 7:00 PM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Yashoda Resort, Gayaji</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Photo Gallery -->
+    <section class="gallery-section section-padding bg-light" id="gallery">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Captured Moments</h2>
+                <img src="assets/floral-divider.png" alt="divider" class="divider fade-in" onerror="this.style.display='none'">
+                <p>A glimpse into our pre-wedding memories.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item reveal"><img src="assets/gallery1.jpg" alt="Gallery Image 1" id="g1"></div>
+                <div class="gallery-item reveal"><img src="assets/gallery2.jpg" alt="Gallery Image 2" id="g2"></div>
+                <div class="gallery-item reveal"><img src="assets/gallery3.jpg" alt="Gallery Image 3" id="g3"></div>
+                <div class="gallery-item reveal"><img src="assets/gallery4.jpg" alt="Gallery Image 4" id="g4"></div>
+                <div class="gallery-item reveal"><img src="assets/gallery5.jpg" alt="Gallery Image 5" id="g5"></div>
+                <div class="gallery-item reveal"><img src="assets/gallery6.jpg" alt="Gallery Image 6" id="g6"></div>
+            </div>
+        </div>
+    </section>
+
+   <!-- 7. Wedding Venue -->
+<section class="venue-section section-padding" id="venue">
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>Wedding Venue</h2>
+            <img src="assets/floral-divider.png" alt="divider" class="divider fade-in" onerror="this.style.display='none'">
+        </div>
+        <div class="venue-container reveal scale-up">
+            <div class="venue-info">
+                <h3>Milan Utsav Hotel & Banquet Hall</h3>
+                <p>Nutan Nagar (Gayaji)</p>
+                <a href="https://maps.app.goo.gl/f99kCksfmiUBxcNHA?g_st=aw" target="_blank" class="map-link"><i class="fas fa-directions"></i> Get Directions</a>
+            </div>
+            <div class="map-wrapper">
+                <!-- Google Map Embed – updated with proper embed URL -->
+                <iframe src="https://www.google.com/maps?q=Milan%20Utsav%20Hotel%20%26%20Banquet%20Hall%20Nutan%20Nagar%20(Gayaji)&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- 8. RSVP Section -->
+    <section class="rsvp-section section-padding bg-light" id="rsvp">
+        <div class="container text-center reveal">
+            <div class="section-title">
+                <h2>Are You Attending?</h2>
+                <img src="assets/floral-divider.png" alt="divider" class="divider fade-in" onerror="this.style.display='none'">
+                <p>We would love to know if you can make it to our special day. Please click the button below to confirm your presence via WhatsApp.</p>
+            </div>
+            <!-- Pre-filled WhatsApp message link -->
+            <a href="https://wa.me/919525755863?text=Hello!%20I%20would%20love%20to%20attend%20Shilpi%20and%20Ankush's%20wedding.%20My%20name%20is:%20" target="_blank" class="btn-primary rsvp-btn">
+                <i class="fab fa-whatsapp"></i> Confirm your presence
+            </a>
+        </div>
+    </section>
+
+    <!-- 9. Share Section and Footer -->
+    <footer class="footer section-padding">
+        <div class="container text-center reveal">
+            <h2 class="footer-names">Shilpi & Ankush</h2>
+            <p>#ShilpiGotHerAnkush</p>
+            
+            <div class="share-box">
+                <p>Scan to Share Wedding Website</p>
+                <div class="qr-placeholder" id="qr-code">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://shilpi-ankush-wedding.com" alt="QR Code">
+                </div>
+            </div>
+            
+            <p class="copyright">&copy; 2026 Shilpi & Ankush. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
