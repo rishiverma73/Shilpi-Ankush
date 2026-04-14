@@ -457,10 +457,9 @@ ul {
     content: '';
     position: absolute;
     top: 10px; left: 10px; right: 10px; bottom: 10px;
-    border: 1px dashed var(--primary-color);
     border-radius: 10px;
     pointer-events: none;
-    opacity: 0.6;
+    opacity: 0;
 }
 
 .couple-card:hover {
@@ -480,7 +479,6 @@ ul {
     border-radius: 50%;
     margin: 0 auto 20px;
     padding: 10px;
-    border: 2px dashed var(--primary-color);
     position: relative;
 }
 
@@ -561,10 +559,9 @@ ul {
     content: '';
     position: absolute;
     top: 10px; left: 10px; right: 10px; bottom: 10px;
-    border: 1px dashed var(--primary-color);
     border-radius: 10px;
     pointer-events: none;
-    opacity: 0.6;
+    opacity: 0;
     z-index: 10;
 }
 
@@ -693,7 +690,6 @@ ul {
     height: 250px;
     position: relative;
     box-shadow: 0 5px 15px rgba(107, 35, 35, 0.2);
-    border: 3px solid var(--secondary-color);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
